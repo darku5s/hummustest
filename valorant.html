@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>valorant</title>
+    <link rel="stylesheet" type="text/css" href="valorant.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header-container">
+        <img src="game images/hummus-removebg-preview.png" width="100" height="100" alt="hummus">
+        <img src="game images/hummusbanner-removebg-preview.png"  height="150">
+    </div>
+
+    <div class="navbar">
+        <table width="5%"  frame="void" rules="none">
+            <tr>
+                <th> Logout </th>
+            </tr>
+        </table>
+    
+        <table width="8%"   rules="none">
+            <tr>
+                <th> Community </th>
+            </tr>
+        </table>
+    
+        <table width="5%"  rules="none">
+            <tr>
+                <th> Profile </th>
+            </tr>
+        </table>
+    </div>
+    <br><br><br><br>
+
+    <div class="valorant">
+        <h1>Valorant (2020)</h1>
+        <div class="content">
+            <div class="image-container">
+                <img src="game images/EGS_VALORANT_RiotGames_S1_2560x1440-5eff1895cb16cfb2bbbaaef1f6e90223.jpeg" width="700" class="game-image">
+                <div class="buttons">
+                    <a href="https://www.riotgames.com/en/valorant" target="_blank">
+                        <button class="get-game">Get Game</button>
+                    </a>
+                    <button id="fav-button" class="add-to-favorites">Add to Favorites</button>
+                    <span id="favorite-message"></span>
+                </div>
+            </div>
+            <div class="text-container">
+                <p>Valorant is a free-to-play, first-person shooter game for online multiplayer. It was developed and published by Riot Games, the California-based company that also created League of Legends. The game is available on PC and Epic Games. 
+                    In Valorant, two teams of five players compete in 25 rounds to plant or defuse a bomb. Each team is assigned to either attack or defend, and players control characters called "agents" who have different abilities based on cultures and countries around the world. Players use teamwork, gunplay, and tactical abilities to outwit and outplay their opponents. For example, some agents can equip gas emitters to throw toxic gas clouds, while others have bows and scouting abilities. Players can also carry sidearms and primary weapons, such as pistols, SMGs, shotguns, rifles, sniper rifles, and machine guns. 
+                </p>
+            </div>
+        </div>
+    </div>
+    
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const favButton = document.getElementById('fav-button');
+        const favoriteMessage = document.getElementById('favorite-message');
+
+        favButton.addEventListener('click', () => {
+            if (favButton.textContent === 'Add to Favorites') {
+                favButton.textContent = 'Remove from Favorites';
+                favoriteMessage.textContent = 'Added to Favorites';
+
+                favoriteMessage.style.display = 'block';
+                setTimeout(() => {
+                    favoriteMessage.style.display = 'none';
+                }, 3000);
+            } else {
+                favButton.textContent = 'Add to Favorites';
+                favoriteMessage.textContent = 'Removed from Favorites';
+                favoriteMessage.style.display = 'block';
+                // Hide the message after a few seconds
+                setTimeout(() => {
+                    favoriteMessage.style.display = 'none';
+                }, 3000);
+            }
+        });
+    });
+</script>
+
+</body>
+</html>

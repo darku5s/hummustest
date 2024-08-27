@@ -1,0 +1,130 @@
+html {
+    scroll-behavior: smooth; /* Smooth scrolling effect */
+  }
+body, h1, p, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.centerpage{
+    background-image: linear-gradient(rgb(88, 20, 20),rgb(255,39,39));
+
+}
+*{  text-decoration: none;
+    font-family: 'Raleway';
+}
+
+/* General body styling */
+.centerpage1{
+    color: #e0e0e0; /* Light text color */
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+
+}
+.centerpage2{
+    justify-content: space-between;
+    display: flex;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: 20px;
+    color: #e0e0e0;
+}
+
+.navbar {
+    z-index: 999 ;
+    position: fixed;
+    width: 100vw;
+    height: 40px;
+    background-color: rgb(71, 6, 6); 
+    padding: 10px; 
+    display: flex; 
+    justify-content: center;
+    gap:100px;
+
+}
+.navbar a{
+    z-index: 999;
+    width: 5vw;
+    color:white; 
+    margin-top: 8px;
+    text-decoration: none; 
+    font-weight: 500;
+}
+.navbar a:hover{
+    text-shadow:1px 1px 1px white;
+    font-weight: bold;
+}
+
+.navbar img{
+    justify-content: flex-start;
+    height: 80px;
+}
+
+
+button {
+    background-color:rgb(118,0,0); /* Primary button color */
+    color: #ffffff; /* Button text color */
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e45a4b; 
+    box-shadow:1px 1px 10px #e0e0e0;/* Darker button color on hover */
+}
+
+/* Main content styling */
+main {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+h1 {
+    font-size: 2rem;
+
+}
+.intro{
+    width:500px;
+}
+.hummus{
+    font-size: 100px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    animation: entrance 2s 1;
+}
+@keyframes entrance {
+        from{transform: scale(0.5);}
+        to{transform: scale(1);}  
+    
+}
+.hummus:hover{
+    color: antiquewhite;
+    text-shadow:10px 1px 10px #e78888;
+}
+#FAQ {
+    padding:2rem;
+    color: white;
+    width: 90%;
+    margin-left: 5%;
+}
+#AboutUs{
+        padding: 2rem;
+
+        color: white;
+        width: 90%;
+        margin-left: 5%;
+    
+}
+#ques{
+    font-weight: bold;
+}
+#register{
+    margin-left: 60%;
+    margin-top: 20%;
+    font-size: 30px;
+}

@@ -1,0 +1,84 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body Styling */
+body {
+    background-color: #121212; /* Dark background for a gaming theme */
+    color: #ffffff; /* White text color */
+    line-height: 1.6;
+    font-size: 16px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header Styling */
+header {
+    width: 100%;
+    text-align: center;
+    background-color: #1f1f1f; /* Slightly lighter dark background */
+    padding: 20px 0;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ff4500; /* Orange border for emphasis */
+}
+
+header h1 {
+    font-size: 2em;
+    color: #ea0000; /* Bright orange color */
+    text-transform: uppercase;
+}
+
+/* Main Content Styling */
+main {
+    max-width: 800px;
+    width: 100%;
+    background-color: #1f1f1f; /* Match the header's background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+}
+
+main h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #ff0000; /* Keep the orange theme */
+}
+
+main img {
+    display: block;
+    margin: 0 auto 20px auto; /* Center image */
+    border-radius: 10px;
+}
+
+main p {
+    margin-bottom: 15px;
+}
+
+main strong {
+    color: #d00000; /* Orange color for strong emphasis */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    main {
+        padding: 15px;
+    }
+
+    main img {
+        width: 100%; /* Make the image responsive */
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    main h2 {
+        font-size: 1.5em;
+    }
+}

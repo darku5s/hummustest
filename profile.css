@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 00;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Raleway";
+    background-image: linear-gradient(rgb(118,0,0),rgb(255,39,39));
+    line-height: 1.6;
+}
+
+.navbar {
+    z-index: 999 ;
+    position: relative;
+    width: 100%;
+    height: 40px;
+    background-color: rgb(71, 6, 6); 
+    padding: 10px; 
+    display: flex; 
+    justify-content: center;
+    gap:100px;
+
+}
+.navbar a{
+    z-index: 999;
+    width: 5vw;
+    color:white; 
+    margin-top: -3px;
+    text-decoration: none; 
+    font-weight: 500;
+}
+.navbar a:hover{
+    text-shadow:1px 1px 1px white;
+    font-weight: bold;
+}
+
+.navbar img{
+    justify-content: flex-start;
+    height: 80px;
+}
+
+
+
+
+
+.profile-section {
+    padding: 50px 20px;
+    background-color: #ffffff;
+    position: relative;
+    margin: 50px auto; /* Center the profile section horizontally */
+    max-width: 800px; /* Increase the max-width to make the profile section larger */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center the content within the profile section */
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: column; /* Stack the avatar and details vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    text-align: center; /* Center text within the container */
+}
+
+.profile-sidebar {
+    text-align: center;
+    padding-bottom: 20px; /* Add some padding at the bottom for spacing */
+}
+
+.profile-avatar {
+    width: 150px; /* Increase the avatar size */
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid rgb(118,0,0);
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.profile-username {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center; /* Center text */
+}
+
+.profile-bio {
+    font-size: 16px;
+    color: #777;
+    max-width: 200px;
+    margin: 0 auto;
+    text-align: center; /* Center text */
+}
+
+.profile-details {
+    flex: 1;
+    padding: 0; /* Remove left padding */
+    text-align: center; /* Center text */
+}
+
+.profile-details h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+    border-bottom: 2px solid rgb(118,0,0);
+    padding-bottom: 10px;
+}
+
+.profile-info-list {
+    list-style: none;
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+    padding-left: 0; /* Remove default padding */
+    text-align: center; /* Center text */
+}
+
+.profile-info-list li {
+    margin-bottom: 10px;
+}
+
+.edit-profile-btn {
+    background: rgb(118,0,0);
+    color: #fff;
+    padding: 15px 30px; /* Increase button size */
+    font-size: 18px; /* Increase button font size */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.3s;
+    display: inline-block;
+}
+
+
+.edit-profile-btn:hover {
+    background: rgb(118,0,0);
+    transform: scale(1.05);
+}
+
+.recentlyplayed-section {
+    padding: 50px 20px;
+    background-color: #ffffff;
+    margin: 30px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.recentlyplayed-heading {
+    color: rgb(99, 8, 8);
+    text-decoration: underline;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.recentlyplayed-games {
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+    background-color: rgb(71, 6, 6);
+    padding: 10px;
+}
+
+.recentlyplayed-games img {
+    width: 110px;
+    height: auto;
+    cursor: pointer;
+    object-fit: cover;
+}
+
+.recentlyplayed-games img:hover {
+    color: #111;
+    background: rgb(255, 0, 0);
+    box-shadow: 0 0 30px rgb(255, 0, 0);
+    cursor: pointer;
+}
+
+
+/* Footer */
+.footer {
+    background: rgb(118,0,0);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 530px;
+}

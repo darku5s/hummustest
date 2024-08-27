@@ -1,0 +1,103 @@
+*{
+    font-family:'Raleway';
+
+}
+body {
+    
+    background-image: linear-gradient(rgb(147, 0, 0),rgb(255, 89, 89));
+    min-height: 100vh;
+    display: flex;
+    background-attachment: fixed;
+    flex-direction: column; 
+
+}
+
+.navbar {
+    background-color: rgb(71, 6, 6); 
+    padding: 10px; 
+    display: flex; 
+    justify-content: right;
+
+}
+
+.navbar table {
+    margin: 0; 
+    border-left: 2px solid rgb(255, 228, 192); 
+    
+}
+
+.navbar table:first-of-type {
+    border-left: none; 
+}
+
+.navbar th {
+    background-color: rgb(71, 6, 6);
+    color: rgb(255, 228, 192); 
+    border:none;
+}
+.valorant .content {
+    display: flex;
+    align-items: flex-start; /* Align items to the start (top) */
+}
+.valorant h1{
+    color:rgb(255, 239, 208);
+}
+.valorant img {
+    margin-right: 20px; 
+}
+
+.valorant p {
+    max-width: 800px; /* Limit the width of the paragraph if needed */
+    font-size: larger;
+    color: rgb(255, 239, 208);
+    
+}
+.content {
+    display: flex;
+    align-items: flex-start; /* Align items to the start (top) */
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the left */
+    margin-right: 20px; /* Space between the image and the paragraph */
+}
+
+.game-image {
+    width: 800; /* Ensure the image fits within the container */
+}
+
+.buttons {
+    margin-top: 10px;
+}
+
+.get-game, .add-to-favorites {
+    background-color: #3a0d0d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.get-game:hover, .add-to-favorites:hover {
+    background-color: #8b0000;
+}
+#favorite-message {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 117, 117, 0.451);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    display: none;
+    z-index: 1000;
+}

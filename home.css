@@ -1,0 +1,323 @@
+*{
+    font-family:'Raleway';
+
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+
+    background-image: linear-gradient(rgb(118, 0, 0),rgb(255, 39, 39));
+    min-height: 100vh;
+    display: flex;
+    background-attachment: fixed;
+    flex-direction: column; 
+
+}
+
+.navbar {
+    z-index: 999 ;
+    position: fixed;
+    width: 100vw;
+    height: 40px;
+    background-color: rgb(54, 5, 5); 
+    padding: 10px; 
+    display: flex; 
+    justify-content: center;
+    gap:100px;
+
+}
+.navbar a{
+    z-index: 999;
+    width: 5vw;
+    color:white; 
+    margin-top: 8px;
+    text-decoration: none; 
+    font-weight: 500;
+}
+.navbar a:hover{
+    text-shadow:1px 1px 1px white;
+    font-weight: bold;
+}
+
+.navbar img{
+    justify-content: flex-start;
+    height: 80px;
+}
+
+
+.main{
+    text-align: center;
+    flex:1;
+    justify-content: flex-start;
+    background-color:rgb(71, 6, 6); 
+    padding: 50px 0px; 
+    color: rgb(255, 228, 192);
+}
+.main h1{
+    font-size:100px;
+    block-size:50px;
+}
+
+.topgame {
+    margin: 20px 0;
+}
+
+.topgame h1 {
+    color: rgb(255, 228, 192);
+    
+}
+
+.games-container {
+    position: relative;
+    width: 100%; 
+}
+
+.games {
+    overflow-x: auto;
+    background-color: rgb(71, 6, 6);
+    scroll-behavior: smooth;
+    display: flex;
+    justify-content: flex-start; 
+    gap: 30px; 
+    padding: 10px; 
+}
+
+.games::-webkit-scrollbar {
+    height: 8px;
+}
+
+.games::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 4px;
+}
+
+.games::-webkit-scrollbar-track {
+    background-color: rgb(71, 6, 6);
+}
+
+.games img {
+    height: 110px; 
+    flex-shrink: 0; 
+}
+.scroll-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 10;
+}
+
+.scroll-arrow.left {
+    left: 10px;
+}
+
+.scroll-arrow.right {
+    right: 10px;
+}
+
+.favgame h1{
+    color: rgb(255, 228, 192);
+  
+
+}
+
+.favs {
+    display: flex;
+    justify-content: flex-start; 
+    gap:30px;
+    background-color: rgb(71, 6, 6); 
+    padding: 10px; 
+    display: flex; 
+}
+
+.favs img {
+    width: 110px;
+    height: auto;
+    cursor: pointer;
+}
+
+.recgame h1{
+    color: rgb(255, 228, 192);
+    text-decoration: underline;
+
+}
+
+.recs {
+    display: flex;
+    justify-content: flex-start; 
+    gap: 30px; 
+    background-color: rgb(71, 6, 6); 
+    padding: 10px; 
+    display: flex; 
+}
+
+.recs img {
+    width: 110px; 
+    height: auto; 
+    cursor: pointer;
+}
+.games img, .favs img, .recs img,.other-section img {
+    padding: 0; 
+    margin: 0; 
+    width: 110px; 
+    height: auto; 
+    object-fit: cover;
+    
+}
+.games img:hover,.favs img:hover,.recs img:hover{
+    color: #111;
+    background: rgb(255, 0, 0);
+    box-shadow: 0 0 30px rgb(255, 0, 0);
+    cursor: pointer;
+    
+
+}
+.gamessection{
+    width=65%;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    background-color: #3a0d0d; 
+    color: white; 
+    padding: 10px 0; 
+    box-sizing: border-box;
+    margin-bottom: 0;
+}
+.container {
+    width: 100%;
+    margin-top: 20px; 
+
+}
+
+.left-section {
+    padding-right: 0px; 
+}
+
+.right-section {
+    display: flex;
+    background-color: rgb(206, 60, 60); 
+    color: rgb(255, 226, 223);
+    padding: 50px;
+}
+.right-section h2{
+    text-decoration: underline;
+}
+.right-section {
+    padding: 70px;
+    gap: 40px;
+    background-image: linear-gradient(rgb(231, 31, 31),rgb(180, 1, 1));
+    border-left: 2px solid #550101;
+}
+
+.news-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #ffc6c6;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.news-item h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.news-item p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.game-item {
+    margin: 20px 0;
+}
+.games-container .games div {
+    display: inline-block;
+    margin: 10px;
+    width: 150px; /* Adjust width to fit the content */
+}
+
+.games-container, .trending-games-container {
+    position: relative; /* Ensure positioning context for the arrows */
+    overflow-x: auto;
+    background-color: rgb(71, 6, 6);
+    scroll-behavior: smooth;
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+    padding: 0px;
+}
+
+.games-container img, .trending-games-container img {
+    height: 150px; /* Ensure same height for images */
+    object-fit: cover;
+}
+.trending-games-section h1 {
+    color: rgb(255, 228, 192);
+    
+}
+
+
+.trending-games-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.trending-games-container::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 4px;
+}
+
+.trending-games-container::-webkit-scrollbar-track {
+    background-color: rgb(71, 6, 6);
+}
+
+
+
+.trending-games-container img:hover {
+    background: rgb(255, 0, 0);
+    box-shadow: 0 0 30px rgb(255, 0, 0);
+    cursor: pointer;
+}
+
+
+
+.scroll-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 10;
+    /* Ensure the arrows are visible above other content */
+}
+
+.scroll-arrow.left {
+    left: 10px;
+}
+
+.scroll-arrow.right {
+    right: 10px;
+}
+.game-name {
+    color: #fff;
+    margin-top: 10px;
+    font-size: 16px;
+    text-align: center;
+}

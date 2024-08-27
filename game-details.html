@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Details</title>
+    <link rel="stylesheet" type="text/css" href="game-details.css">
+</head>
+
+<body>
+    <header>
+        <h1>Game Details</h1>
+    </header>
+    <main id="game-details">
+        <!-- Game details will be inserted here -->
+    </main>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const gameId = urlParams.get('game_id');
+
+        const apiKey = 'b1ddadbd3e2f4cfba97fa8122a9cb0dd';
+        const apiUrl = `https://api.rawg.io/api/games/${gameId}?key=${apiKey}`;
+
+        fetch(apiUrl)
+            .then(response => response.json())
+            .then(data => {
+                const gameDetails = document.getElementById('game-details');
+                gameDetails.innerHTML = `
+                    <h2>${data.name}</h2>
+                    <img src="${data.background_image}" alt="${data.name}" style="width: 300px;">
+                    <p><strong>Release Date:</strong> ${data.released}</p>
+                    <p><strong>Rating:</strong> ${data.rating}</p>
+                    <p><strong>Genre:</strong> ${data.genres.map(genre => genre.name).join(', ')}</p>
+                    <p><strong>Platforms:</strong> ${data.platforms.map(platform => platform.platform.name).join(', ')}</p>
+                    <p><strong>Description:</strong> ${data.description}</p>
+                `;
+            })
+            .catch(error => console.error('Error fetching game details:', error));
+    </script>
+</body>
+</html>

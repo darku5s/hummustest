@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile - hummus.gg</title>
+    <link rel="stylesheet" href="profile.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"><!-- Use the same CSS file -->
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo"><B>HUMMUS</B></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="#community">Community</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Edit Profile Section -->
+    <section class="profile-section">
+        <div class="profile-container">
+            <div class="profile-sidebar">
+                <img src="https://img.freepik.com/free-vector/cute-ninja-gaming-cartoon-vector-icon-illustration-people-technology-icon-concept-isolated-flat_138676-8079.jpg" alt="User Avatar" class="profile-avatar">
+                <div class="form-group">
+                    <label for="avatar">Change Avatar</label>
+                    <input type="file" id="avatar" name="avatar" accept="image/*">
+                </div>
+            </div>
+            <div class="profile-details">
+                <h2>Edit Profile</h2>
+                <form action="/save-profile" method="POST" class="edit-profile-form">
+
+                    <div class="form-group">
+                        <label for="language">Preferred Language: </label>
+                        <select id="language" name="language">
+                            <option value="english">English</option>
+                            <option value="english">Hindi</option>
+                            <option value="spanish">Malayalam</option>
+                            <option value="french">Tamil</option>
+                            <option value="english">Telugu</option>
+                            <option value="english">Spanish</option>
+                        </select>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="social">Social Media Link: </label>
+                        <input type="url" id="social" name="social" placeholder="       instagram or twitter">
+                    </div><br>
+                    <div class="form-group">
+                        <label for="bio">Bio: </label>
+                        <textarea id="bio" name="bio" rows="4">blah blah blah i love gaming</textarea>
+                    </div>
+                    
+    
+                    <button type="submit" class="save-btn">Save Changes</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 hummus.gg. All rights reserved.</p>
+    </footer>
+</body>
+</html>
